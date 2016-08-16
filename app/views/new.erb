@@ -1,11 +1,17 @@
 <html>
-  <head></head>
+  <head>
+  </head>
   <body>
-    <form action="/tasks" method="post">
-      <p>Enter a new task:</p>
-      <input type="text" name="task[title]"/><br/>
-      <textarea name="task[description]"/></textarea><br/>
-      <input type="submit"/>
+    <form role="form" action="/tasks" method="post">
+      <h3>Enter a new task:</h3>
+      <div class="form-group">
+        <label for="task[title]">Title:</label>
+        <input type="text" name="task[title]"/>
+      </div>
+      <div class="form-group">
+        <label for="task[description]">Description:</label>
+        <textarea class="form-control" rows="5" name="task[description]"/></textarea><br>
+      <input type="submit" class="btn btn-primary"/>
     </form>
   </body>
 </html>
